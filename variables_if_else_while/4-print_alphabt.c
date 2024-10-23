@@ -9,6 +9,7 @@ char c;
 for ( c='a' ; c <= 'z' ; c++)
 {
 if (c == 'e' ||c == 'q')
+{
 continue;
 }
 {
