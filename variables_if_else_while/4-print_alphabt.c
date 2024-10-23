@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - entry point
- * Return: always
+ * Return: always 0.
  */
 int main (void)
 {
@@ -10,8 +10,6 @@ for ( c='a' ; c <= 'z' ; c++)
 {
 if (c == 'e' ||c == 'q')
 continue;
-}
-{
 putchar(c);
 }
 putchar('\n');
