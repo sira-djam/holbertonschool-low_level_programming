@@ -7,18 +7,23 @@
  */
 int main(void)
 {
-	int n;
+int n;
+int lastdigit;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+lastdigit = n % 10;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-if (last digit of n>5)
+if (lastdigit > 5)
 {
-printf("%d and is greater than 5\n" , n) ;
+printf("%d and is greater than 5\n", lastdigit);
 }
-if (last digit of n=0)
+else if (lastdigit == 0)
 {
-printf("%d and is 0\n" , n) ;
+printf("%d and is 0\n", lastdigit);
 }
-if (last difit of n<6 ,
-	return (0);
+else
+{
+printf("%d and is less than 6 and not o\n", lastdigit);
+}
+return (0);
 }
