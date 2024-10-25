@@ -6,7 +6,6 @@
  * @c: test letter
  * Return: return true ot false
  */
-
 int _isalpha(int c)
 {
 	if (isalpha(c))
