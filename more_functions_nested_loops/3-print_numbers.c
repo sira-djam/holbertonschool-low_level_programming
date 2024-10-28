@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-  *print _print les chiffre dans l'ordre 0 a 9
-  *Return always
-  */
+  * print _print les chiffre dans l'ordre 0 a 9
+  *
+  * Return always
+*/
 void print_numbers(void)
 {
 int n = 48;
