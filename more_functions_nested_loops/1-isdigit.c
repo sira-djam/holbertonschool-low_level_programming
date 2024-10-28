@@ -1,10 +1,10 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* imprimer les chiffre compris ente 0 et 9
-* @c:
-* Return: 1 si vrai sinon return 0
-*/
+ * _isdigit - checks for digit
+ * @c: the character to check
+ * Return: Always
+ */
 int _isdigit(int c)
 {
 if (c >= 48 && c <= 57)
