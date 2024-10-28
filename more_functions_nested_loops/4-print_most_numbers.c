@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-  * print_most_number - imprimer une suite de 0 a 9 sauf 2 et 4
+  * print_most_numbers - imprimer une suite de 0 a 9 sauf 2 et 4
   *
   * Return always
   */
