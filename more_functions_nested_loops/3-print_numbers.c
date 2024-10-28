@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * print _print les chiffre dans l'ordre 0 a 9
+  * print_numbers - print les chiffre dans l'ordre 0 a 9
   *
   * Return always
 */
