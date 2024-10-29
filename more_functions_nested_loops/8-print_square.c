@@ -5,13 +5,24 @@
   * Return always
   */
 void print_square(int size)
+{
+int a;
+int b;
 
-int size
+	if (size <= 0)
 {
-	while (size > 0)
-{
-	_putchar('#');
+	_putchar('\n');
+
 }
+else
+{
+ 	for (a = 0; a < size; a++)
+{
+	for (b = 0; b < size; b++)
+{
+	_putchar(35);
+	}
 _putchar('\n');
 }
-
+}
+}
