@@ -26,7 +26,7 @@ int main(void)
 	}
 	else
 	{
-		putchar(a);
+		putchar(a + '0');
 }		putchar(' ');
 }
 	return (0);
