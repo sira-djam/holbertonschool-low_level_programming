@@ -26,8 +26,8 @@ int main(void)
 	}
 	else
 	{
-		putchar(a + '0');
-}		putchar(' ');
+		printf("%d ", a);
+}		
 }
 	return (0);
 }
