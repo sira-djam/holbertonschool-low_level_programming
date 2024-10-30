@@ -1,28 +1,33 @@
 #include<stdio.h>
 /**
-  * fizz_buzz - imprim√©selon si multiple ou divisible les mots fizz ou buzz ou fizz buzz
-  * Return always
+  * main - imprim√ ©selon si multiple ou divisibl
+  * les mots fizz ou buzz ou fizz buzz
+  * Return: always
   */
-fizz_buzz (int a)
-{
+
+int main(void)
+	{
+		int a;
+
 	for (a = 1 ; a <= 100 ; a++)
 {
 	if (a % 15 == 0)
 	{
-		printf(FizzBuzz);
+		printf("FizzBuzz ");
 	}
 	else if (a % 5 == 0)
 	{
-		printf(Buzz);
+		printf("Buzz ");
 	}
 	else if (a % 3 == 0)
 	{
-		printf(Fizz);
-	
+		printf("Fizz ");
+
 	}
 	else
 	{
-		printf(a)
+		putchar(a);
+}		putchar(' ');
 }
-}
+	return (0);
 }
