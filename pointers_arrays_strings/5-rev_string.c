@@ -1,7 +1,7 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
-  * rev _string - reverses string
+  * rev_string - reverses string
   * @s: letter checked
   */
 
