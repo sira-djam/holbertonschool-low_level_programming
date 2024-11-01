@@ -1,17 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  * puts2 - 
+  * puts2 - imprimer un caractere sur 2
+  * @tmps: chaine de caractere
   * @str: pointer string
-  * Return: always
   */
 void puts2(char *str)
 {
-	int n;
-	for (n = 0; str[n] <= 9; n++)
+	int c = 0;
+	while (str[c] != '\0')
+		c++;
 {
-	if (n % 2 == 0)
-	_putchar(n);
-	_putchar('\n');
+	if (c % 2 == 0)
+{
+	_putchar(str[c]);
 }
+}
+	_putchar('\n');
 }
