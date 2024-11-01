@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
   * puts2 - imprimer un caractere sur 2
-  * @tmps: chaine de caractere
   * @str: pointer string
   */
 void puts2(char *str)
