@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include <stdio.h>
 /**
   * print_array - imprimer un tableau
@@ -18,5 +18,5 @@
 		printf(", ");
 	}
 	}
-	_putchar('\n');
+	printf("\n");
 }
