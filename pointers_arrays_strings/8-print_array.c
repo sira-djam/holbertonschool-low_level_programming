@@ -4,7 +4,6 @@
   * print_array - imprimer un tableau
   * @a: pointe le 1er element
   * @n: taille du tableau
-  * @i: valeur de n
   */
 void print_array(int *a, int n)
 {
