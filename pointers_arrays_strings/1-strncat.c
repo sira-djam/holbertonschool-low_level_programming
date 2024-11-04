@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  6  * str_concat - concatenate strings
-  7  * @dest: string 1
-  8  * @src: string 2
-  9  * Return: NULL if failure
- 10  */
+ * *_strncat - concatenate strings
+ * @dest: string 1
+ * @src: string 2
+ * @n: number of bytes
+ * Return: dest
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	int index = 0;
