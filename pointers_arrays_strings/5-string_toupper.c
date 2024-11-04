@@ -1,6 +1,7 @@
 #include "main.h"
 /**
   * *string_toupper - changer les lettres minuscule en majuscule
+  * @hi: caractere minuscule
   */
 char *string_toupper(char *hi)
 {
