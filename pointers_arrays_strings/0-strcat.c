@@ -7,13 +7,15 @@
   */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
-	for (i = 0 ; src[i] != '\0' ; i++)
-	{
-		dest[i] = src[j];
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
+int lend, lens, l, a;
+lend = _strlen(dest);
+lens = _strlen(src);
+l = lend;
+for (a = 0; a <= lens; a++)
+{
+dest[l] = src[a];
+l++;
+}
+dest[l] = '\0';
+return (dest);
 }
