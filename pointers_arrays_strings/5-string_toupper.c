@@ -2,6 +2,7 @@
 /**
   * *string_toupper - changer les lettres minuscule en majuscule
   * @hi: caractere minuscule
+  * Return: always
   */
 char *string_toupper(char *hi)
 {
