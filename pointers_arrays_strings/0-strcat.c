@@ -1,4 +1,6 @@
 #include "main.h"
+#include "2-strlen.c"
+#include <stdio.h>
 /**
   * *_strcat - imprimer deux ligne a suivre
   * @dest: est un pointer d'une chaine de caractere
