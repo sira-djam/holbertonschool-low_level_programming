@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-  * _memcpy - copier une zone memoire vers une autre
+  * * _memcpy - copier une zone memoire vers une autre
   * @dest: 1er zone memoire
   * @src: 2eme zone memoire
   * @n: nombre d'octet
-  * Return: always
+  * Return: sur pointer dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
