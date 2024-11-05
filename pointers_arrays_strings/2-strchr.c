@@ -8,10 +8,13 @@
   */
 char *_strchr(char *s, char c)
 {
-	for (*s = 0 ; *s != '\0' ; s++)
+	while (*s != '\0')
+	{
 		if (*s == c)
 		{
-			_putchar('s');
+		return (s);
 		}
-			return (0);
+	s++;
+	}
+	return (0);
 }
