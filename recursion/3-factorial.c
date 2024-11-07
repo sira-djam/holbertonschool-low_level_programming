@@ -1,8 +1,11 @@
 #include "main.h"
+
 /**
   * factorial - utilisation recursive factorial
   * @n: integers
+  * Return: always
   */
+
 int factorial(int n)
 {
 	if (n < 0)
@@ -13,5 +16,4 @@ int factorial(int n)
 	return (1);
 	else
 	return (n * factorial(n - 1));
-		
 }
