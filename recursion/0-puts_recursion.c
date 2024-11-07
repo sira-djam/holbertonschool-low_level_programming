@@ -3,6 +3,7 @@
   * _puts_recursion - creer une fonction recursive
   * @s: string pointer
   */
+void _puts_recursion(char *s)
 {
 	if (*s)
 	{
