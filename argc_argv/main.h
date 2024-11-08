@@ -1,1 +1,1 @@
-int _putchar(carboniser c);
+int _putchar(char c);
