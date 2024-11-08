@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
   * _pow_recursion - renvoyé la valeur de x puissance y
   * @x: integers
@@ -11,10 +12,9 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	
 	else if (y == 0)
 	{
 		return (1);
 	}
-	return (x * ( _pow_recursion(x, y - 1)));
+	return (x * (_pow_recursion(x, y - 1)));
 }
