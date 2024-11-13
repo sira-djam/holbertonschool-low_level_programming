@@ -1,37 +1,33 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
- * str_concat - concatenate deux chaine de caractere avec malloc
- * @s1: 1er pointer d'une chaine
- * @s2: 2eme pointeur d'une chaine
- * Return: pointer concatener
+ * str_concat - concatenation of two string
+ * @s1: first string
+ * @s2: second string
+ * Return: Pointer with space or null if it's an ampty string
  */
-char *str_contact(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
-    char *concat;
-    int i = 0;
-    int concat_ss = 0;
-
-    if (s1 == NULL)
-    s1 = "";
-
-    if (s2 == NULL)
-    s2 = "";
-
-    for (i = 0; s1[i] || s2[i]; i++)
-    concat_ss++;
-
-    concat = malloc(sizeof(char) * concat_ss);
-
-    if (concat == NULL)
+  int i = 0, j = 0, k = 0;
+  char *ptr;
+  if ((s1 == NULL) && (s2 == NULL))
+    s1 = "", s2 = "";
+  while (s1[i])
+    i++;
+  while (s2[j])
+    j++;
+  ptr = malloc((i + j) + 1);
+  if (ptr == NULL)
     return (NULL);
-
-    for (i = 0; s1[i]; i++)
-		concat[concat_ss++] = s1[i];
-
-	for (i = 0; s2[i]; i++)
-		concat[concat_ss++] = s2[i];
-
-	return (concat);
-    
+  while (k < (i + j))
+  {
+    if (k < i)
+      ptr[k] = s1[k];
+    if (k >= i)
+      ptr[k] = *s2++;
+    k++;
+  }
+  ptr[k] = '\0';
+  return (ptr);
 }
