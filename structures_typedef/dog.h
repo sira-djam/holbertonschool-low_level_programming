@@ -1,4 +1,5 @@
-#include <stdio.h>
+#ifndef dog_h
+#define dog_h
 /**
  * struct dog - create un type struct dog
  * @name: nom
@@ -11,3 +12,4 @@ char *name;
 float age;
 char *owner;
 };
+#endif
