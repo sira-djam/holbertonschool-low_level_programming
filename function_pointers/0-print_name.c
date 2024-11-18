@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  * print_name - pointer de fonction ecrire name
  * @name: fonction qui permet d'ecrire le nom
