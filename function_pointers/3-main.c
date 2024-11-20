@@ -15,6 +15,9 @@ int main(int argc,char *argv[])
 		printf("error\n");
 		exit(98);
 	}
+
+	oprt = get_op_func(argv[2]);
+
 	if (!oprt)
 	{
 		printf("error\n");
