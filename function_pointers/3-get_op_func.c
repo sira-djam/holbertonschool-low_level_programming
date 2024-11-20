@@ -1,10 +1,11 @@
 #include "3-calc.h"
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
+
 /**
- * get_op_func - slect correct function
- * @s: pointer initial
- * Return: fonction d'operation ou NULL
+ * get_op_func - select the correct function
+ * @s: string of get p function
+ * Return: Integer and function
  */
 int (*get_op_func(char *s))(int, int)
 {
