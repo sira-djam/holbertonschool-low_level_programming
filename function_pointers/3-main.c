@@ -1,22 +1,25 @@
-#include "calc.h"
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  *
  */
 
-int main(argc, *argv[])
-
-int (*oprt)(int, int)
-
-if (argc != 4)
+int main(int argc,char *argv[])
 {
-printf("error\n");
-exit (98);
-}
-if (!oprt)
-{
-printf("error\n")
-exit(99);
-}
-printf("%d\n", oprt(atoi(arv[1], atoi(argv[3])));
-return (0);
+	int (*oprt)(int, int);
+
+	if (argc != 4)
+	{
+		printf("error\n");
+		exit(98);
+	}
+	if (!oprt)
+	{
+		printf("error\n");
+		exit(99);
+	}
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
