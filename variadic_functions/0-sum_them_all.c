@@ -4,7 +4,7 @@
 /**
  * sum_them_all - somme de tous les entiers
  * @n: integers
- * Return : the sum of all parametre
+ * Return: the sum of all parametre
  */
 int sum_them_all(const unsigned int n, ...)
 {
