@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_numbers -
+ * print_numbers - print list numbers
  * @n: integers
  * @separator: is the string to be printed between numbers
  */
