@@ -1,42 +1,47 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+
 /**
- * print_all - print all const format
- * @format: type d'argument
- *
+ * print_all - prints anything
+ * @format: formats of the parameters
  */
+
 void print_all(const char * const format, ...)
-
-
 {
-tab-t spec[] ={
-
-	{"c", pchar},
-	{"i", integer},
-	{"f", float},
-	{"s", char*},
-
-	};
-
-	va_list all;
-	int i = 0;
-
-va_start(all, format);
-
-	while (i < format)
-	{
-	printf(format, format[i]);
-	}
-	int j = 0;
-	while (j < spec )
-	{
-	printf(spec, spec[j] + 1);
+int l;
+char *separator = "", *string;
+va_list parameters;
+va_start(parameters, format);
+if (format)
+{
+while (format[l] != '\0')
+{
+switch (format[l])
+{
+case 'c':
+printf("%s%c", separator, va_arg(parameters, int));
+break;
+case 'i':
+printf("%s%d", separator, va_arg(parameters, int));
+break;
+case 'f':
+printf("%s%f", separator, va_arg(parameters, double));
+break;
+case 's':
+string = va_arg(parameters, char *);
+if (!string)
+{
+string = "(nil)";
 }
-j++;
-i++;
-
-va_end(all);
+printf("%s%s", separator, string);
+break;
+default:
+l++;
+continue;
+}
+separator = ", ";
+l++;
+}
+}
+printf("\n");
+va_end(parameters);
 }
