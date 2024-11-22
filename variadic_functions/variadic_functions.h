@@ -10,9 +10,9 @@ int _putchar(char c);
 
 typedef struct tab
 {
-	char*spc;
-	void(*f)(va_list all);
+	char *spec;
+	void (*f)(va_list all);
 
-}print_type;
+}tab_t;
 
 #endif
