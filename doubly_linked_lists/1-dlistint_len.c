@@ -7,6 +7,7 @@
  * @h: pointer
  * Return: number in a linked
  */
+
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t i = 0;
