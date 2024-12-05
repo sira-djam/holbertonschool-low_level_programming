@@ -6,6 +6,7 @@
  * add_dnodeint_end - ajouter une node en fin de liste
  * @head: pointer head
  * @n: integers
+ * Return: adress of the new element
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
