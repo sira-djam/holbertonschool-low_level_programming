@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * print_list - imprimer la liste
- * @h: pointeur
+ * print_list - prints all the elements
+ * @h: pointer to the head
  * Return: the number of nodes
  */
 size_t print_list(const list_t *h)
