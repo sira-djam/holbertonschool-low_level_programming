@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_textfile - lire le fichier et afficher son contenu
  * @filename: pointer
