@@ -3,8 +3,9 @@
  *delete_dnodeint_at_index - deletes the node at index
  * @head: pointer
  * @index: integers
- * Return : int
+ * Return: 1 if it's success
  */
+
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *h1;
